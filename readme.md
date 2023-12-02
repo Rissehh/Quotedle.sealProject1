@@ -5,19 +5,17 @@ DEPLOYED SITE: [Click here](https://quotedle-seal-project1.vercel.app/)
 
 ## Description of Project
 
-A paragraph discussing the idea of your project, the API you are using and desired user experience.
-
-> I am creating a perfume maker, we generate list of perfume ingredient using the items from the perfume ingredient api. Users will select ingredients and generate an imaginary perfume.
+> I am creating a quote website, the site will generate a random quote of the day. Users will also be able to search up quotes by their favourite authors or radomly generate a quote.
 
 ## Details about the API
 
-Give me a brief description of the API you are using and how you plan on using it. Does it use some sort of authentication like an APIkey. List some of the urls are using below.
+API name = Quotable ... This API for more than 5000 famous quotes  There is no Auth or API Key and it is Https.
 
-- `https://www.perfumeapi.com/ingredients`: This returns a json array with all the different ingedients
+- `https://api.quotable.io/quotes/random`: This returns a random quote with the author name 
 
 Sample Fetch/Ajax called:
 ```js
-const url = "https://www.perfumeapi.com/ingredients"
+const url = "https://api.quotable.io/quotes/random"
 fetch(url)
 .then((res) => res.json())
 .then((data) => console.log(data))
@@ -27,44 +25,16 @@ The Data I get back:
 ```json
 [
   {
-    "ingredient": "Bergamot",
-    "description": "A citrus fruit with a bright, uplifting scent."
-  },
-  {
-    "ingredient": "Lavender",
-    "description": "A flowering plant with a calming, relaxing scent."
-  },
-  {
-    "ingredient": "Rose",
-    "description": "A flowering plant with a romantic, feminine scent."
-  },
-  {
-    "ingredient": "Jasmine",
-    "description": "A flowering plant with an exotic, sensual scent."
-  },
-  {
-    "ingredient": "Sandalwood",
-    "description": "A woody plant with a warm, earthy scent."
-  },
-  {
-    "ingredient": "Patchouli",
-    "description": "A herb with a deep, musky scent."
-  },
-  {
-    "ingredient": "Vanilla",
-    "description": "A spice with a sweet, gourmand scent."
-  },
-  {
-    "ingredient": "Amber",
-    "description": "A fossilized resin with a warm, balsamic scent."
-  },
-  {
-    "ingredient": "Musk",
-    "description": "An animal secretion with a sensual, musky scent."
-  },
-  {
-    "ingredient": "Oud",
-    "description": "A type of agarwood with a dark, mysterious scent."
+    "_id": "k1TVeBO_5Kh",
+    "author": "Laurence J. Peter",
+    "content": "An economist is an expert who will know tomorrow why the things he predicted yesterday didn't happen today.",
+    "tags": [
+      "Business"
+    ],
+    "authorSlug": "laurence-j-peter",
+    "length": 107,
+    "dateAdded": "2022-07-06",
+    "dateModified": "2023-04-14"
   }
 ]
 ```
