@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotedle</title>
     <!-- External Libraries-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!-- YOUR FILES-->
     <script src="./app.js" defer></script>
-    <link rel="stylesheet" href="./stlye.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./stlye.css" />
+  </head>
+
+  <body>
     <header>
-        <h1>Quotedle</h1>
-
-
+      <h1>Quotedle</h1>
     </header>
     <main>
+        <div><h4>QUOTE OF THE DAY</h4></div>
+      <button id="By Author">Search Quotes By Author</button>
+      <button id="Random Quote">Generate Random Quote</button>
 
-
+      <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
     </main>
-    <footer>
-
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
