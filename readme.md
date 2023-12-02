@@ -45,11 +45,11 @@ Here put a mix of text explanation plus a picture giving us an idea of the layou
 
 #### Desktop View
 
-![My Desktop View](https://imgur.com/1hTM33p)
+![My Desktop View](https://i.imgur.com/KmL8BBz.png)
 
 #### Mobile View
 
-![My Mobile View](https://imgur.com/3KgizKX)
+![My Mobile View](https://i.imgur.com/XJMp13z.png)
 
 ## Schedule of Work
 
