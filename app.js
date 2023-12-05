@@ -36,9 +36,7 @@ function generateRandomQuote()
             
         });
 
-       
-        
-
+           
 
 // function that render the movie to the dom
 function renderQuote(quote) {
@@ -51,9 +49,9 @@ console.log(quote)
         <h3>${quote[0].author}</h3>`;
 }
 
-// randomMovie(data) 
-//}
-//const quotediv = 
+// function that allows the generate random button to generate random quotes
+document.getElementById('RandomQuote').addEventListener('click', generateRandomQuote);   
+
 
 
 
