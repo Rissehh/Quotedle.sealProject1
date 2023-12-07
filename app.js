@@ -69,15 +69,20 @@ getQuote("elon-musk")
 
 // function that render the author quote to the dom
 function renderAuthorQuote(quote) {
+    
     // grab the div.quote
     const quotediv = document.querySelector(".quote"); 
 console.log(quote)
-console.log(quote.results[0].content)
-console.log(quote.results[0].author)
-    // alter the HTML inside the div
-    quotediv.innerHTML = `
-        <h4>${quote.results[0].content}</h4>
-        <h3>${quote.results[0].author}</h3>`;
+    // Check if the quote data is available
+    if (quote.results && quote.results.length > 0) {
+        // alter the HTML inside the div
+        quotediv.innerHTML = `
+            <h4>${quote.results[0].content}</h4>
+            <h3>${quote.results[0].author}</h3>`;
+    } else {
+        // Display a message if no author or quote is found
+        quotediv.innerHTML = `<p>No author found, please include the authors full name.</p>`;
+    }
 }
 
 
