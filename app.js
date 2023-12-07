@@ -1,7 +1,7 @@
 // API //
 const randomURL = "https://api.quotable.io/quotes/random"
 const baseURL = "https://api.quotable.io"
-
+const authorURL = "https://api.quotable.io/quotes?author="
 
 
 //Functions
@@ -54,13 +54,51 @@ document.getElementById('RandomQuote').addEventListener('click', generateRandomQ
 
 
 
+// Search Quote By Author
+function getQuote(authorName) {
+    const url = `${authorURL}${authorName}`
+    
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+    //where we can work weith data recieved from the API
+    renderAuthorQuote(data)
+});
+}
+getQuote("elon-musk")
+
+// function that render the author quote to the dom
+function renderAuthorQuote(quote) {
+    // grab the div.quote
+    const quotediv = document.querySelector(".quote"); 
+console.log(quote)
+console.log(quote.results[0].content)
+console.log(quote.results[0].author)
+    // alter the HTML inside the div
+    quotediv.innerHTML = `
+        <h4>${quote.results[0].content}</h4>
+        <h3>${quote.results[0].author}</h3>`;
+}
 
 
+// function to handle the form submission
+function handleSubmit(event){
+    // prevent the refreshing of the page from the form submission
+    event.preventDefault()
+    // grab the form from the event
+    const form = event.target
+    // create a formData to access the form data
+    const formData = new FormData(form)
+    // grab the movieTitle
+    const authorName = formData.get("authorName")
+    // fetch the specified
+    getQuote(authorName)
+    // Reset the form after submission
+    document.querySelector("form").reset();
+}
 
-
-
-
-
+// add the function to the form submission
+document.querySelector("form").addEventListener("submit", handleSubmit)
 
 
 
