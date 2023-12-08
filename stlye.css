@@ -79,3 +79,24 @@ footer {
     }
 }
 
+#authors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    grid-gap: 10px; /* Space between boxes */
+    padding: 10px;
+}
+
+.author-box {
+    border: 1px solid #ccc; /* Border for the box */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    text-align: center; /* Center the text */
+}
+
+#suggestion {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-style: italic;
+
+}
