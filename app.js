@@ -99,6 +99,7 @@ function handleSubmit(event) {
 // add the function to the form submission
 document.querySelector("form").addEventListener("submit", handleSubmit);
 
+// trying to use jquery 
 $(document).ready(function () {
   $.ajax({
     url: "https://api.quotable.io/authors?sortBy=quoteCount&order=desc",

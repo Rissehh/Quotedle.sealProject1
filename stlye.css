@@ -1,9 +1,9 @@
 /* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Soft gray background */
+    background-color: #f5f5f5; 
     color: #333;
     line-height: 1.6;
 }
@@ -15,8 +15,8 @@ header, main, footer {
 
 /* Header Styles */
 header {
-    background-color: #2c3e50; /* Dark blue */
-    color: #ecf0f1; /* Light gray */
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
 }
 
 header h1 {
@@ -30,7 +30,7 @@ main {
 }
 
 .quote h4 {
-    color: #3498db; /* Bright blue */
+    color: #3498db; 
     font-size: 1.4em;
     margin-bottom: 20px;
 }
@@ -44,26 +44,26 @@ button, input[type="text"] {
 }
 
 button {
-    background-color: #e74c3c; /* Soft red */
+    background-color: #e74c3c; 
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #c0392b; /* Darker red */
+    background-color: #c0392b; 
     transform: translateY(-2px); /* Slight lift */
 }
 
 input[type="text"] {
     width: calc(100% - 22px);
     border: 1px solid #ddd;
-    /* text-align: center; */
+    
 }
 
 /* Footer Styles */
 footer {
-    background-color: #34495e; /* Darker blue */
+    background-color: #34495e; 
     color: #ecf0f1;
     font-size: 0.8em;
 }
@@ -81,17 +81,17 @@ footer {
 
 #authors-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     grid-gap: 10px; /* Space between boxes */
     padding: 10px;
 }
 
 .author-box {
-    border: 1px solid #ccc; /* Border for the box */
+    border: 1px solid #ccc; 
     padding: 10px;
     border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Background color */
-    text-align: center; /* Center the text */
+    background-color: #f9f9f9; 
+    text-align: center; 
 }
 
 #suggestion {
